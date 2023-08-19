@@ -34,7 +34,7 @@ export const NavBar = () => {
             <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
                 <Container>
                     <Navbar.Brand href="/">
-                        <span className="cyan-text">Daniel Razal</span>
+                        <span className="text-white display-8">Daniel Razal</span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
                         <span className="navbar-toggler-icon"></span>
