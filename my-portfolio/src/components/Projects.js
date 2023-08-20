@@ -1,11 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
 import PacMan from "../assets/img/PacMan.png";
-
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import PetShop from "../assets/img/PetShop.png";
+import TalkBack from "../assets/img/TalkBack.png";
+import FootballTables from "../assets/img/Football-Tables.png";
+import FootballQuiz from "../assets/img/Football Quiz.png";
+import Users from "../assets/img/Users.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -14,33 +14,39 @@ export const Projects = () => {
   const projects = [
     {
       title: "Pacman",
-      description: "WPF",
+      description: "Developed using WPF, With 6 opponents aiming to catch you, while you aim to collect all coins for victory.",
       imgUrl: PacMan,
+      githubRepository: "https://github.com/DanielRazal/Pac-Man"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "PetShop",
+      description: "Developed using ASP.NET MVC with Sql Server, Customers access animal details and share reviews. Meanwhile, admins wield streamlined control: add, delete, and edit animals.",
+      imgUrl: PetShop,
+      githubRepository: "https://github.com/DanielRazal/PetShop"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Football Tables",
+      description: "Developed using React , It has Leagues and Standings sections.Leagues: See soccer leagues with images and names from an API.Standings: View team standings. Filter by leagues and seasons for easy navigation.",
+      imgUrl: FootballTables,
+      githubRepository: "https://github.com/DanielRazal/Football-App"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Talk Back",
+      description: "Developed using C# Web API, Angular and Sql Server, TalkBack is a messaging system that allows users to chat with each other and play Tic-Tac-Toe against each other.The system consists of clients that connect to a central application server, enabling them to see who is online and choose with whom to talk or play Tic-Tac-Toe.",
+      imgUrl: TalkBack,
+      githubRepository: "https://github.com/DanielRazal/Talk-Back"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Football Quiz",
+      description: "Developed using C# WEB API, Angular, and SQL Server. User-friendly site spotlighting football's greatest players, Explore Legends: Top 10 chosen by the creator, detailed career info, achievements , Quick Quizzes: Timed quizzes, score, and Top Score ranking , Compare Players: Matchup based on stats.",
+      imgUrl: FootballQuiz,
+      githubRepository: "https://github.com/DanielRazal/Football-History"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Users",
+      description: "Developed using C# Web API, Angular and Sql Server, This project allows you to perform registration and login operations using a RESTful API. It also supports email functionality with SendGrid integration and enables file uploads to the wwwroot directory.",
+      imgUrl: Users,
+      githubRepository: "https://github.com/DanielRazal/Users"
     },
   ];
 
@@ -53,18 +59,9 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <br/><br/>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
@@ -81,12 +78,6 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
               </div>}
@@ -94,7 +85,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
     </section>
   )
 }
