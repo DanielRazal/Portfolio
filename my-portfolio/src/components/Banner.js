@@ -5,6 +5,8 @@ import TrackVisibility from 'react-on-screen';
 import Me from '../assets/img/Me.png';
 import colorSharp from "../assets/img/color-sharp.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import Banner1 from "../assets/img/banner.jpg";
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -60,7 +62,8 @@ export const Banner = () => {
                   <p>Software development graduate from Sela College,
                     I am a highly motivated seeking a challenging and diverse role in a technology-based company.
                   </p>
-                </div>}
+                </div>
+                }
             </TrackVisibility>
           </Col>
           <Col xs={12} md={4} xl={4}>
@@ -68,8 +71,8 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
-      <img className="background-image-right" src={colorSharp2}></img>
+      {/* <img src={Banner1} alt="Image" /> */}
+      {/* <img className="background-image-right" src={colorSharp2}></img> */}
     </section>
   )
 }
