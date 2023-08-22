@@ -57,13 +57,14 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <div>
+                  {/* className={isVisible ? "animate__animated animate__fadeIn" : ""} */}
                   <h2>Projects</h2>
                   <br /><br />
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     </Nav>
-                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                    {/* <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}> */}
                       <Tab.Pane eventKey="first">
                         <Row className="text-center">
                           {
@@ -78,7 +79,7 @@ export const Projects = () => {
                           }
                         </Row>
                       </Tab.Pane>
-                    </Tab.Content>
+                    {/* </Tab.Content> */}
                   </Tab.Container>
                 </div>}
             </TrackVisibility>
