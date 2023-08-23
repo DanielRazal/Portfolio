@@ -1,5 +1,4 @@
 import { Col } from "react-bootstrap";
-import ScreenSizeDisplay from "./ScreenSizeDisplay";
 import React, { useEffect, useState } from 'react';
 
 export const ProjectCard = ({ title, description, imgUrl, githubRepository }) => {
@@ -22,9 +21,9 @@ export const ProjectCard = ({ title, description, imgUrl, githubRepository }) =>
   return (
     <Col size={12} sm={6} md={6} className="">
       <div className="proj-imgbx">
-        <img src={imgUrl} />
+        <img src={imgUrl} alt="Projects"/>
         <div className="proj-txtx">
-          <h4 className="title" >{title}</h4>
+          <h4 className="title">{title}</h4>
           <span className="description">{description}</span>
           <br /><br />
           <div>
@@ -33,7 +32,6 @@ export const ProjectCard = ({ title, description, imgUrl, githubRepository }) =>
           </div>
         </div>
       </div>
-      <ScreenSizeDisplay />
     </Col>
   )
 }

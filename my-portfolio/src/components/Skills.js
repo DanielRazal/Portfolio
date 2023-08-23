@@ -1,6 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp2 from "../assets/img/color-sharp2.png"
 import SqlServer from "../assets/img/Sql.svg"
 
 export const Skills = () => {
@@ -11,7 +12,7 @@ export const Skills = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -44,13 +45,14 @@ export const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
+                arrows={true}
               >
                 {skills.map((skill, index) => (
                   <div key={index} className="item d-flex flex-column align-items-center justify-content-center">
-                    <img
+                    <img className='skillsImg'
                       src={skill.src}
                       alt={skill.label}
-                      style={{ width: '150px', height: '150px' }}
+                      // style={{ width: '150px', height: '150px' }}
                     />
                     <h5 className="mt-2">{skill.label}</h5>
                   </div>
@@ -60,7 +62,8 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img className="background-image-left" src={colorSharp} alt="ColorSharp" />
+      <img className="background-image-right" src={colorSharp2} alt="ColorSharp2" />
     </section>
   )
 }

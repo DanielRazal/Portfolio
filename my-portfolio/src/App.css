@@ -17,6 +17,124 @@
   font-weight: 400;
 }
 
+@media (max-width: 1280px) {
+
+  .txt-rotate,
+  .banner-title {
+    font-size: 60px;
+  }
+}
+
+/************ Custom Screen ************/
+
+@media (max-width: 1199.5px) {
+
+  .skill-slider .react-multiple-carousel__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .skill-slider .react-multiple-carousel__arrow--left {
+    left: 0px;
+  }
+
+  .skill-slider .react-multiple-carousel__arrow--right {
+    right: 0px;
+  }
+
+  .skillsImg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .txt-rotate,
+  .banner-title {
+    font-size: 45px;
+  }
+
+  .title {
+    font-size: 20px !important;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .description {
+    font-size: 11px !important;
+    position: absolute;
+    left: 10px;
+  }
+
+  .btn-primary {
+    margin-bottom: -85px;
+  }
+}
+
+
+@media (max-width: 991.5px) and (min-width: 767px) {
+
+  .txt-rotate,
+  .banner-title {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 20px !important;
+    margin-top: 10%;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .btn-primary {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767.5px) and (min-width: 575.5px) {
+
+  .txt-rotate,
+  .banner-title {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 15px !important;
+    margin-top: 20%;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .btn-primary {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 499px) {
+  .description {
+    font-size: 8px !important;
+    position: absolute;
+    left: 10px;
+  }
+
+  .btn-primary {
+    margin-bottom: -55px;
+  }
+}
+
+@media (max-width: 474.5px) {
+
+  .txt-rotate,
+  .banner-title {
+    font-size: 36px;
+  }
+}
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -290,7 +408,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner h1 {
-  font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -347,6 +464,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .txt-rotate>.wrap {
   border-right: 0.08em solid #666;
+  /* font-size: 60px; */
 }
 
 /************ Skills Css ************/
@@ -380,7 +498,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 80%;
   margin: 0 auto;
   position: relative;
-  /* padding: ; */
 }
 
 .skill-slider .item img {
@@ -394,6 +511,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+
+.skill-slider .react-multiple-carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.skill-slider .react-multiple-carousel__arrow--left {
+  left: 0px;
+}
+
+.skill-slider .react-multiple-carousel__arrow--right {
+  right: 0px;
+}
+
+.skillsImg {
+  width: 150px;
+  height: 150px;
 }
 
 
@@ -443,7 +580,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
   text-align: center;
   z-index: 0;
 }
@@ -457,7 +594,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
 }
 
 .project .nav.nav-pills .nav-link.active::before {
@@ -558,63 +695,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
-}
-
-@media (max-width: 1200px) {
-
-  .title {
-    font-size: 20px !important;
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .description {
-    font-size: 8px !important;
-    position: absolute;
-    left: 10px;
-  }
-
-  .btn-primary {
-    margin-bottom: -85px;
-  }
-}
-
-@media (max-width: 991.5px) and (min-width: 767px) {
-
-  .title {
-    font-size: 20px !important;
-    margin-top: 10%;
-  }
-
-  .description {
-    display: none;
-  }
-
-  .btn-primary {
-    margin-bottom: 0px;
-  }
-}
-
-@media (max-width: 767.5px) and (min-width: 575.5px) {
-
-  .title {
-    font-size: 15px !important;
-    margin-top: 20%;
-  }
-
-  .description {
-    display: none;
-  }
-
-  .btn-primary{
-    margin-bottom: 0;
-  }
-  
-}
-
-
-@media (max-width: 499px) {
-
 }
