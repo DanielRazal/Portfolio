@@ -8,21 +8,22 @@ export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
+      breakpoint: { max: 1024, min: 500 },
+      items: 2,
     },
     mobile: {
-      breakpoint: { max: 64, min: 0 },
-      items: 1
-    }
+      breakpoint: { max: 499, min: 0 }, 
+      items: 1,
+    },
   };
+  
 
   const skills = [
     { src: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Logo_C_sharp.svg', label: 'C#' },
@@ -52,7 +53,6 @@ export const Skills = () => {
                     <img className='skillsImg'
                       src={skill.src}
                       alt={skill.label}
-                      // style={{ width: '150px', height: '150px' }}
                     />
                     <h5 className="mt-2">{skill.label}</h5>
                   </div>

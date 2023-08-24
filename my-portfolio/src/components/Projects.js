@@ -58,28 +58,25 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div>
-                  {/* className={isVisible ? "animate__animated animate__fadeIn" : ""} */}
                   <h2>Projects</h2>
                   <br /><br />
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     </Nav>
-                    {/* <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}> */}
-                      <Tab.Pane eventKey="first">
-                        <Row className="text-center">
-                          {
-                            projects.map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                />
-                              )
-                            })
-                          }
-                        </Row>
-                      </Tab.Pane>
-                    {/* </Tab.Content> */}
+                    <Tab.Pane eventKey="first">
+                      <Row className="text-center">
+                        {
+                          projects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                              />
+                            )
+                          })
+                        }
+                      </Row>
+                    </Tab.Pane>
                   </Tab.Container>
                 </div>}
             </TrackVisibility>

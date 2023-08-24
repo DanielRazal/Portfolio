@@ -9,10 +9,8 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  // const toRotate = useMemo(() => ["Software Developer", "Web Developer", "Full Stack Developer"], []);
-  const toRotate = useMemo(() => ["Full Stack Developer", "Full Stack Developer"], []);
-  // const period = 1500;
-  const period = 500;
+  const toRotate = useMemo(() => ["Software Developer", "Web Developer", "Full Stack Developer"], []);
+  const period = 1500;
 
   const tick = useCallback(() => {
     let i = loopNum % toRotate.length;
