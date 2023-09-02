@@ -1,5 +1,6 @@
 # Portfolio
 
+Developed using **React**.\
 Welcome to my Portfolio project! This repository showcases my personal portfolio website, where I share information about myself, my skills, projects, and more.
 
 ## Deployment
