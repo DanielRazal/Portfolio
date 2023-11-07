@@ -9,9 +9,10 @@ The Portfolio project has been deployed to the Internet. You can access it using
 
 ## Running the Project
 
-### `npm start`
+To run the **"Portfolio"** project, execute the following commands:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Client (React):
 
+1. Install client dependencies: **npm i**
+2. Start the React app: **npm start**
 
